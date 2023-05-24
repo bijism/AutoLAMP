@@ -26,6 +26,7 @@ apt install phpmyadmin -y
 
 # Install all PHP extensions for running WordPress and Laravel
 # Add commands here
+apt-get install -y php-curl php-gd php-mbstring php-xml php-xmlrpc php-soap php-intl php-zip
 
 # Install Certbot
 apt install certbot -y
