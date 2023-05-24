@@ -32,6 +32,8 @@ apt install certbot -y
 
 # Optimize Apache for high traffic and high load
 # Add optimization commands here
+echo "MaxKeepAliveRequests 500" >> /etc/apache2/apache2.conf
+echo "KeepAliveTimeout 5" >> /etc/apache2/apache2.conf
 
 # Create a PHP info page
 echo "<?php phpinfo(); ?>" > /var/www/html/phpinfo.php
